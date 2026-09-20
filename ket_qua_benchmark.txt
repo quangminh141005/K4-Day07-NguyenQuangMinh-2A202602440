@@ -1,0 +1,44 @@
+QUERY 1: Sinh viên đăng ký học phần ở đâu?
+FILTER: {'department': 'academic-affairs'}
+GOLD: Sinh viên đăng ký học phần trong cổng học vụ.
+RESULTS:
+  1. score=-0.0233 doc_id=course-registration chunk_id=course-registration#0
+     > Khối metadata phía trên là **template mẫu** cho K4(bắt buộc: `audience` + `source_url` + `retrieved_at` + `document_version`, cùng ít nhất một trường hữu ích khác như `department`). Thay bằng nguồn công khai thật của nhóm trước khi dùng làm benchmark. # Đăng ký học phần (dữ liệu khởi động) Sinh viên đăng ký học phần trong cổng học vụ theo lịch của từng học kỳ. Một học phần có thể yêu cầu học phần tiên quyết; sinh viên cần kiểm tra điều kiện trước khi xác nhận đăng ký.
+  2. score=-0.1386 doc_id=course-registration chunk_id=course-registration#1
+     Khi gặp lỗi trùng lịch, sinh viên điều chỉnh lớp họcphần trước thời hạn điều chỉnh được công bố. Mọi yêu cầu ngoại lệ phải được gửi qua kênh hỗ trợ học vụ chính thức.
+
+================================================================================
+QUERY 2: Trước khi xác nhận đăng ký học phần cần kiểm tragì?
+FILTER: {'department': 'academic-affairs'}
+GOLD: Cần kiểm tra điều kiện học phần tiên quyết.
+RESULTS:
+  1. score=-0.1684 doc_id=course-registration chunk_id=course-registration#0
+     > Khối metadata phía trên là **template mẫu** cho K4(bắt buộc: `audience` + `source_url` + `retrieved_at` + `document_version`, cùng ít nhất một trường hữu ích khác như `department`). Thay bằng nguồn công khai thật của nhóm trước khi dùng làm benchmark. # Đăng ký học phần (dữ liệu khởi động) Sinh viên đăng ký học phần trong cổng học vụ theo lịch của từng học kỳ. Một học phần có thể yêu cầu học phần tiên quyết; sinh viên cần kiểm tra điều kiện trước khi xác nhận đăng ký.
+  2. score=-0.3362 doc_id=course-registration chunk_id=course-registration#1
+     Khi gặp lỗi trùng lịch, sinh viên điều chỉnh lớp họcphần trước thời hạn điều chỉnh được công bố. Mọi yêu cầu ngoại lệ phải được gửi qua kênh hỗ trợ học vụ chính thức.
+
+================================================================================
+QUERY 3: Sinh viên phải làm gì khi bị trùng lịch học?
+FILTER: {'department': 'academic-affairs'}
+GOLD: Điều chỉnh lớp học phần trước thời hạn được công bố.
+RESULTS:
+  1. score=0.1266 doc_id=course-registration chunk_id=course-registration#1
+     Khi gặp lỗi trùng lịch, sinh viên điều chỉnh lớp họcphần trước thời hạn điều chỉnh được công bố. Mọi yêu cầu ngoại lệ phải được gửi qua kênh hỗ trợ học vụ chính thức.
+  2. score=-0.1296 doc_id=course-registration chunk_id=course-registration#0
+     > Khối metadata phía trên là **template mẫu** cho K4(bắt buộc: `audience` + `source_url` + `retrieved_at` + `document_version`, cùng ít nhất một trường hữu ích khác như `department`). Thay bằng nguồn công khai thật của nhóm trước khi dùng làm benchmark. # Đăng ký học phần (dữ liệu khởi động) Sinh viên đăng ký học phần trong cổng học vụ theo lịch của từng học kỳ. Một học phần có thể yêu cầu học phần tiên quyết; sinh viên cần kiểm tra điều kiện trước khi xác nhận đăng ký.
+
+================================================================================
+QUERY 4: Ai có thể sử dụng dịch vụ thư viện?
+FILTER: {'department': 'library'}
+GOLD: Sinh viên, giảng viên và nhân viên.
+RESULTS:
+  1. score=-0.0919 doc_id=library-services chunk_id=library-services#0
+     > Khối metadata phía trên là **template mẫu** cho K4— thay `source_url`/`retrieved_at`/`document_version` bằng nguồn công khai thật trước khi dùng làm benchmark. # Dịch vụ thư viện (dữ liệu khởi động) Thư viện cung cấp mượn tài liệu và không gian học tập cho sinh viên, giảng viên vànhân viên. Người dùng cần mang thẻ định danh hợp lệ khi sử dụng dịch vụ mượn. Nhóm cần bổ sung quy định thời hạn mượn, gia hạn và xử lý quá hạn từ nguồn chính thức trước khidùng làm benchmark.
+
+================================================================================
+QUERY 5: Cần mang gì khi mượn tài liệu tại thư viện?
+FILTER: {'department': 'library'}
+GOLD: Người dùng cần mang thẻ định danh hợp lệ.
+RESULTS:
+  1. score=-0.1499 doc_id=library-services chunk_id=library-services#0
+     > Khối metadata phía trên là **template mẫu** cho K4— thay `source_url`/`retrieved_at`/`document_version` bằng nguồn công khai thật trước khi dùng làm benchmark. # Dịch vụ thư viện (dữ liệu khởi động) Thư viện cung cấp mượn tài liệu và không gian học tập cho sinh viên, giảng viên vànhân viên. Người dùng cần mang thẻ định danh hợp lệ khi sử dụng dịch vụ mượn. Nhóm cần bổ sung quy định thời hạn mượn, gia hạn và xử lý quá hạn từ nguồn chính thức trước khidùng làm benchmark.
